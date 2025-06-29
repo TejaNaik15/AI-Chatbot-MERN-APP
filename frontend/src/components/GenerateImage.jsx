@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Chatbot.css";
 
 const sendMessageAPI = async (message) => {
-  const response = await fetch("http://localhost:3000/ask", {
+  const response = await fetch("https://ai-chatbot-mern-app-backend.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
